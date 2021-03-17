@@ -23,4 +23,12 @@ public class UserController{
 
 		return "user/update";
 	}
+	
+	// 삭제 페이지로 이동 - master 브랜치에 주석 추가
+	@RequestMapping("/user/delete.do")
+	public String delete(){
+		logger.info("경로 : delete");
+
+		return "user/delete";
+	}
 }
